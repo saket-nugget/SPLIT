@@ -7,7 +7,7 @@
 
 **SPLIT** is a modern, intelligent web application designed to make splitting bills effortless. Upload a receipt, and let our AI parse the items for you. Assign items to friends using natural language chat, and generate instant payment summaries.
 
-![App Screenshot](./screen.png)
+![App Screenshot](docs/assets/screen.png)
 
 ## ✨ Features
 
