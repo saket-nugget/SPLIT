@@ -25,7 +25,7 @@ const SplitScreen: React.FC = () => {
                     </div>
                     <h1 className="text-white text-lg font-bold tracking-tight">SPLIT</h1>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 md:gap-4">
                     <div className="hidden md:flex items-center text-sm text-gray-400 gap-1">
                         <span className="w-2 h-2 rounded-full bg-green-500"></span>
                         System Operational
@@ -48,10 +48,22 @@ const SplitScreen: React.FC = () => {
                         People
                     </button>
                     <button
+                        className="md:hidden text-gray-300 hover:text-white transition-colors p-2"
+                        onClick={() => setShowPeople(true)}
+                    >
+                        <span className="material-symbols-outlined text-xl">group</span>
+                    </button>
+                    <button
                         className="hidden md:block text-sm font-medium text-gray-300 hover:text-white transition-colors"
                         onClick={() => setShowHistory(true)}
                     >
                         History
+                    </button>
+                    <button
+                        className="md:hidden text-gray-300 hover:text-white transition-colors p-2"
+                        onClick={() => setShowHistory(true)}
+                    >
+                        <span className="material-symbols-outlined text-xl">history</span>
                     </button>
                     <button
                         className="hidden md:flex items-center gap-1 bg-primary/10 hover:bg-primary/20 text-primary px-3 py-1.5 rounded-full text-sm font-bold transition-colors"
@@ -103,7 +115,7 @@ const SplitScreen: React.FC = () => {
                             </div>
                             <button
                                 onClick={() => setIsEditing(!isEditing)}
-                                className={`text-sm font-medium flex items-center gap-1 transition-colors ${isEditing ? 'text-green-500' : 'text-primary hover:text-white'}`}
+                                className={`text-sm font-medium flex items-center gap-1 transition-colors shrink-0 ${isEditing ? 'text-green-500' : 'text-primary hover:text-white'}`}
                             >
                                 <span className="material-symbols-outlined text-base">{isEditing ? 'check' : 'edit'}</span>
                                 {isEditing ? 'Done' : 'Edit'}

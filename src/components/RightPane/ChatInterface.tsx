@@ -63,7 +63,7 @@ const ChatInterface: React.FC = () => {
     }, [items, users]);
 
     return (
-        <div className="flex flex-col h-full overflow-hidden pb-16 md:pb-0">
+        <div className="flex flex-col h-full overflow-hidden">
             {/* Progress Stepper */}
             <div className="pt-4 px-4 md:pt-8 md:px-8 pb-4 shrink-0">
                 <div className="flex justify-between items-center mb-2">
